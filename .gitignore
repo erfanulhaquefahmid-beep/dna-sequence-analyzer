@@ -1,0 +1,40 @@
+# Compiled binaries
+*.exe
+*.o
+*.obj
+*.out
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Build artifacts
+build/
+dist/
+
+# IDE / editor files
+.vscode/
+.idea/
+*.user
+*.suo
+*.sln.cache
+*.VC.db
+*.VC.opendb
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# MinGW / GCC temp files
+*.d
+
+# Generated test output (optional, keep if you want)
+# test_output.txt
