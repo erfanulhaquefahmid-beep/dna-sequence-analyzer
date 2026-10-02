@@ -1,8 +1,16 @@
-# DNA Sequence Analyzer — Core DSA Engineering Module
+# 🧬 DNA Sequence Analyzer — DSA Core Module
+
+> **Branch:** `feature/erfan-dsa-module` &nbsp;|&nbsp; **Author:** Erfanul Haque Fahmid &nbsp;|&nbsp; **Tests:** ✅ 82/82 PASSED
+
+![C++17](https://img.shields.io/badge/C%2B%2B-17-blue?logo=cplusplus)
+![Tests](https://img.shields.io/badge/Tests-82%2F82%20Passed-brightgreen)
+![License](https://img.shields.io/badge/License-Academic-orange)
+![Course](https://img.shields.io/badge/Course-CSE%202105%2F2106-purple)
 
 **Course:** CSE 2105 - Data Structures and Algorithms & CSE 2106 - Data Structures and Algorithms Laboratory  
-**Assigned Student Responsibility:** Tree Module, Map Module, STL Module, Linked List Module  
-**Standard:** Modern C++17 (Strict ISO standard, no external libraries)
+**Module Owner:** Erfanul Haque Fahmid  
+**Assigned Modules:** Tree · Map · STL · Linked List  
+**Standard:** Modern C++17 — zero external dependencies, zero STL containers in manual implementations
 
 ---
 
