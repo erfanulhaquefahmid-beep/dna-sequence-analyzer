@@ -1,0 +1,12 @@
+services:
+  dna-analyzer:
+    build:
+      context: .
+    stdin_open: true
+    tty: true
+
+  tests:
+    build:
+      context: .
+    command: ["./dna_tests"]
+    profiles: ["test"]
