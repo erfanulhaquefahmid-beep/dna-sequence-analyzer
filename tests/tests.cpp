@@ -5,7 +5,6 @@
 #include "replication.h"
 #include "searching.h"
 #include "sorting.h"
-#include "test_data.h"
 #include "transformation.h"
 #include "translation.h"
 #include "ds/DynamicArray.hpp"
@@ -24,6 +23,9 @@ namespace {
 
 int passed = 0;
 int failed = 0;
+
+const std::string templateForTranslation = "GTACCTTATT";
+const std::string graphSequence = "AATGCGAT";
 
 void expect(bool condition, const std::string& name) {
     if (condition) {
@@ -58,7 +60,7 @@ int runAllTests() {
     // Graph
     {
         DeBruijnGraph graph(3);
-        expect(graph.build(TestData::graphSequence), "De Bruijn graph builds");
+        expect(graph.build(graphSequence), "De Bruijn graph builds");
         expect(graph.getVertices().size() == 6, "Graph creates expected vertices");
         expect(!graph.bfs("AA").empty(), "Graph BFS visits vertices");
         expect(!graph.dfs("AA").empty(), "Graph DFS visits vertices");
@@ -103,7 +105,7 @@ int runAllTests() {
                "UAA maps to stop");
         expect(Translation::translateRNA("CCAUGGCCUAA") == "MA",
                "RNA translation starts at AUG and stops at UAA");
-        expect(Translation::translateDNA(TestData::templateForTranslation) == "ME",
+        expect(Translation::translateDNA(templateForTranslation) == "ME",
                "DNA template transcription plus translation works");
     }
 

@@ -1,6 +1,5 @@
 #include "../../include/common/DNAUtils.hpp"
 #include <fstream>
-#include <algorithm>
 #include <cctype>
 #include <iostream>
 
@@ -80,54 +79,4 @@ bool DNAUtils::isValidDNA(const std::string& dna)
         }
     }
     return true;
-}
-
-std::string DNAUtils::toUppercase(const std::string& dna)
-{
-    std::string result = dna;
-    std::transform(result.begin(), result.end(), result.begin(),
-                   [](unsigned char c) { return std::toupper(c); });
-    return result;
-}
-
-std::string DNAUtils::reverseSequence(const std::string& dna)
-{
-    std::string result = dna;
-    std::reverse(result.begin(), result.end());
-    return result;
-}
-
-std::string DNAUtils::reverseComplement(const std::string& dna)
-{
-    std::string rev = reverseSequence(dna);
-    std::string comp;
-    comp.reserve(rev.size());
-    for (char c : rev)
-    {
-        char up = static_cast<char>(std::toupper(static_cast<unsigned char>(c)));
-        switch (up)
-        {
-            case 'A': comp.push_back('T'); break;
-            case 'T': comp.push_back('A'); break;
-            case 'C': comp.push_back('G'); break;
-            case 'G': comp.push_back('C'); break;
-            default:  comp.push_back('N'); break;
-        }
-    }
-    return comp;
-}
-
-std::vector<std::string> DNAUtils::extractKmers(const std::string& dna, int k)
-{
-    std::vector<std::string> kmers;
-    if (k <= 0 || static_cast<size_t>(k) > dna.length())
-    {
-        return kmers;
-    }
-    kmers.reserve(dna.length() - k + 1);
-    for (size_t i = 0; i + k <= dna.length(); ++i)
-    {
-        kmers.push_back(dna.substr(i, k));
-    }
-    return kmers;
 }

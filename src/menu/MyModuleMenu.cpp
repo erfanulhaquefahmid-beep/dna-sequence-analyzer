@@ -796,7 +796,7 @@ void MyModuleMenu::handleFenwickMenu()
                 else
                 {
                     std::string raw = getSafeString("Enter DNA string: ");
-                    currentDNASequence = DNAUtils::toUppercase(raw);
+                    currentDNASequence = STLUtilities::transformToUppercase(raw);
                     rangeIndex.build(currentDNASequence);
                     std::cout << "[SUCCESS] Built Fenwick indexes for sequence.\n";
                 }
