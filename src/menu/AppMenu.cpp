@@ -13,6 +13,7 @@
 #include "sorting.h"
 #include "transformation.h"
 #include "translation.h"
+#include "menu/MyModuleMenu.hpp"
 #include "tests.h"
 
 #include <cstddef>
@@ -51,14 +52,16 @@ void printDivider() {
 void AppMenu::run() {
     while (true) {
         std::cout << "\n============================================================\n"
-                  << "              DNA SEQUENCE ANALYZER (CSE 2106)              \n"
+                  << "        DNA SEQUENCE ANALYZER - UNIFIED MASTER MENU         \n"
+                  << "                  CSE 2105 / CSE 2106 LAB                   \n"
                   << "============================================================\n"
                   << " [1] Shakil's Core DSA Workbench (Array, Stack, Queue Demos)\n"
-                  << " [2] Sequence Generation & Molecular Biology Subsystem      \n"
-                  << " [3] Genome Transformations & KMP Search Subsystem          \n"
-                  << " [4] Sequence Comparison & Multi-Algorithm Sorting          \n"
-                  << " [5] De Bruijn Graph Assembly & Graph Traversal             \n"
-                  << " [6] Run Full Automated Test Suite                          \n"
+                  << " [2] Fahmid's DSA Subsystem (Trees, Maps, Linked Lists, STL)\n"
+                  << " [3] Sequence Generation & Molecular Biology Subsystem (Nadid)\n"
+                  << " [4] Genome Transformations & KMP Search Subsystem (Nadid)  \n"
+                  << " [5] Sequence Comparison & Multi-Algorithm Sorting (Nadid)  \n"
+                  << " [6] De Bruijn Graph Assembly & Graph Traversal (Nadid)     \n"
+                  << " [7] Run Full Automated Test Suite (All 160 Tests)          \n"
                   << " [0] Exit Application                                       \n"
                   << "============================================================\n";
         std::string choice = readLine("Select Subsystem: ");
@@ -69,20 +72,27 @@ void AppMenu::run() {
         } else if (choice == "1") {
             runDSAWorkbench();
         } else if (choice == "2") {
-            runMolecularBiology();
+            runFahmidModule();
         } else if (choice == "3") {
-            runTransformationsAndSearch();
+            runMolecularBiology();
         } else if (choice == "4") {
-            runComparisonAndSorting();
+            runTransformationsAndSearch();
         } else if (choice == "5") {
-            runGraphAnalytics();
+            runComparisonAndSorting();
         } else if (choice == "6") {
+            runGraphAnalytics();
+        } else if (choice == "7") {
             std::cout << "\nExecuting Automated Test Suite...\n";
             (void)runAllTests();
         } else {
-            std::cout << "Invalid selection. Please choose an option between 0 and 6.\n";
+            std::cout << "Invalid selection. Please choose an option between 0 and 7.\n";
         }
     }
+}
+
+void AppMenu::runFahmidModule() {
+    MyModuleMenu fahmidMenu;
+    fahmidMenu.runMainMenu();
 }
 
 // ============================================================================

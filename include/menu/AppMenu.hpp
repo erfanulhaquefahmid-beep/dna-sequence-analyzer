@@ -11,6 +11,7 @@ public:
 private:
     // Sub-menus
     static void runDSAWorkbench();
+    static void runFahmidModule();
     static void runMolecularBiology();
     static void runTransformationsAndSearch();
     static void runComparisonAndSorting();

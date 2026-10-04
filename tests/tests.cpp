@@ -12,6 +12,7 @@
 #include "ds/Stack.hpp"
 #include "ds/Queue.hpp"
 #include "ds/DNAApplications.hpp"
+#include "menu/MyModuleMenu.hpp"
 
 #include <cmath>
 #include <cstddef>
@@ -345,7 +346,19 @@ int runAllTests() {
                "Non-palindromic sequence GAATTA is rejected");
     }
 
-    std::cout << "\n===== Test Summary =====\n";
+    // Fahmid: DSA Module Tests (Tree, Map, STL, Linked List - 82 tests)
+    {
+        std::cout << "\n===== Executing Fahmid's DSA Test Suite (Tree, Map, STL, Linked List) =====\n";
+        MyModuleMenu fahmidMenu;
+        bool fahmidOk = fahmidMenu.runAllTests();
+        if (fahmidOk) {
+            passed += 82;
+        } else {
+            failed += 82;
+        }
+    }
+
+    std::cout << "\n===== Unified Test Summary =====\n";
     std::cout << "Passed: " << passed << '\n';
     std::cout << "Failed: " << failed << '\n';
 
