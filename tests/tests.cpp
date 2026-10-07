@@ -175,9 +175,6 @@ int runAllTests() {
                "Hamming distance works for equal lengths");
         expect(std::fabs(result.similarityPercentage - 75.0) < 0.0001,
                "Similarity percentage is correct");
-
-        const Comparison::ComparisonResult differentLengths =
-            Comparison::compareSequences("ATGC", "ATGCA");
     }
 
     // Shakil: Custom DynamicArray<T> from scratch (zero STL)

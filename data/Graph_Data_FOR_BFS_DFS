@@ -1,0 +1,13 @@
+Sequences_For_Analyzing de-bruijin graph
+| # | DNA Sequence | k | Start Vertex | Why useful |
+|---|---|---:|---|---|
+| 1 | `AATGATA` | 3 | `AA` | Simple branching |
+| 2 | `ATGCGATCGA` | 3 | `AT` | Multiple branches |
+| 3 | `GGCATGGC` | 3 | `GG` | Repeated `GG` creates branching |
+| 4 | `AACGTACGA` | 3 | `AA` | Several connected paths |
+| 5 | `TTCGATTCG` | 3 | `TT` | Repeated patterns |
+| 6 | `CCGATCCGTA` | 3 | `CC` | Good branching example |
+| 7 | `ATATGCGAT` | 3 | `AT` | Repeated `AT` structure |
+| 8 | `GGATCGGCTA` | 3 | `GG` | Branching and cycles |
+| 9 | `ACGTACGATAC` | 3 | `AC` | Repeated `AC` paths |
+| 10 | `TTAGCTTAGCGA` | 3 | `TT` | Larger graph with branches |
