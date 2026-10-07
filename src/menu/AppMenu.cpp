@@ -52,8 +52,8 @@ void printDivider() {
 void AppMenu::run() {
     while (true) {
         std::cout << "\n============================================================\n"
-                  << "        DNA SEQUENCE ANALYZER - UNIFIED MASTER MENU         \n"
-                  << "                  CSE 2105 / CSE 2106 LAB                   \n"
+                  << "                   DNA SEQUENCE ANALYZER                      \n"
+                  << "                       CSE 2106 LAB                         \n"
                   << "============================================================\n"
                   << " [1] Shakil's Core DSA Workbench (Array, Stack, Queue Demos)\n"
                   << " [2] Fahmid's DSA Subsystem (Trees, Maps, Linked Lists, STL)\n"
