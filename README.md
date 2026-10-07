@@ -1,6 +1,6 @@
 # DNA Sequence Analyzer
 
-A high-performance C++17 command-line genomic toolkit developed for **CSE 2105 (Data Structures & Algorithms)** and **CSE 2106 (Data Structures & Algorithms Laboratory)**. The project integrates molecular biology workflows, sequence transformations, string matching, De Bruijn assembly graphs, self-balancing search trees, prefix-sum indexed queries, and fundamental data structures implemented from first principles (**Zero STL**).
+A high-performance C++ command-line genomic toolkit developed for **CSE 2106 (Data Structures & Algorithms Laboratory)**. The project integrates molecular biology workflows, sequence transformations, string matching, De Bruijn assembly graphs, self-balancing search trees, prefix-sum indexed queries, and fundamental data structures implemented from first principles (**Zero STL**).
 
 ---
 

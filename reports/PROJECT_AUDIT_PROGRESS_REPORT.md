@@ -1,5 +1,5 @@
 # Project Audit & Progress Report: DNA Sequence Analyzer
-**Course**: CSE 2105 (Data Structures and Algorithms) / CSE 2106 (Data Structures and Algorithms Laboratory)  
+**Course**: CSE 2106 (Data Structures and Algorithms Laboratory)  
 **Project**: DNA Sequence Analyzer (C++17)  
 **Date of Audit**: October 4, 2026  
 **Auditor**: Antigravity AI Code Auditor  

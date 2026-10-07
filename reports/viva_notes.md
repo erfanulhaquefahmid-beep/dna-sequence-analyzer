@@ -1,5 +1,5 @@
 # Comprehensive Lab Viva Examination Notes
-## Course: CSE 2105 (Data Structures & Algorithms) & CSE 2106 (DSA Laboratory)
+## Course: CSE 2106 (Data Structures & Algorithms Laboratory)
 ## Module: DNA Sequence Analyzer (Tree | Map | STL | Linked List | Fenwick Tree)
 
 ---

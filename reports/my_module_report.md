@@ -1,6 +1,6 @@
 # Laboratory Project Final Report
 ## DNA Sequence Analyzer — Core DSA Engineering Module
-**Course Code:** CSE 2105 (Data Structures and Algorithms) & CSE 2106 (Data Structures and Algorithms Laboratory)  
+**Course Code:** CSE 2106 (Data Structures and Algorithms Laboratory)  
 **Academic Term:** Fall 2026  
 **Assigned Student Responsibility:** Tree Module, Map Module, STL Module, Linked List Module  
 
@@ -282,4 +282,4 @@ To interface with teammates working on Authentication, Sequence Comparison, Grap
 ---
 
 ### 12. Conclusion
-The assigned module provides a production-grade, highly educational implementation fulfilling every requirement of the CSE 2105/2106 syllabus. Manual pointer structures verify mastery of dynamic memory management, self-balancing trees guarantee theoretical efficiency, and modern STL integration bridges academic theory with industry-grade software engineering.
+The assigned module provides a production-grade, highly educational implementation fulfilling every requirement of the CSE 2106 syllabus. Manual pointer structures verify mastery of dynamic memory management, self-balancing trees guarantee theoretical efficiency, and modern STL integration bridges academic theory with industry-grade software engineering.
